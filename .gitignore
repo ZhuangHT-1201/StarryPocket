@@ -1,0 +1,26 @@
+# Local Python environments and build output
+.venv
+.venv/
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.spec
+
+# UI previews and local settings
+_preview.png
+*.log
+docs/screenshots/_raw_*
+
+# Personal media must never enter the public repository
+photos/
+private_photos/
+*_personal_*
+*.jpg
+*.jpeg
+*.heic
+*.webp
+
+# Editor-specific agent state
+.cursor/
+.cursorrules

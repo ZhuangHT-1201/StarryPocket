@@ -1,0 +1,33 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install runtime dependency
+        run: python -m pip install -r requirements.txt
+      - name: Compile application
+        run: python -m py_compile main.py
+      - name: Validate message data and demo assets
+        shell: pwsh
+        run: |
+          @'
+          import json
+          from pathlib import Path
+          root = Path.cwd()
+          messages = json.loads((root / "messages.json").read_text(encoding="utf-8"))
+          assert all(key in messages for key in ("tap", "idle", "outfits"))
+          for key in ("aurora", "ember", "mint"):
+              asset = root / "assets" / f"nova_{key}.png"
+              assert asset.is_file() and asset.stat().st_size > 1000
+          for screenshot in ("desktop.png", "outfits.png", "interactions.png"):
+              assert (root / "docs" / "screenshots" / screenshot).is_file()
+          '@ | python -

@@ -1,0 +1,60 @@
+{
+  "greetings": [
+    "A little starlight for your desktop.",
+    "I saved you a quiet corner of the sky.",
+    "Need a tiny break? Nova is here.",
+    "Work at your pace. I will keep you company."
+  ],
+  "tap": [
+    "Boo! Made you smile.",
+    "My antenna says it is time for water.",
+    "You are doing better than you think.",
+    "Tiny stretch? I will do one too.",
+    "The stars approved this little break.",
+    "I found a pocketful of good luck for you."
+  ],
+  "idle": [
+    "Still here. Still sparkling.",
+    "The desktop feels cozy today.",
+    "Remember to look away from the screen once in a while.",
+    "No rush. Small steps count.",
+    "I am guarding your cursor."
+  ],
+  "morning": [
+    "Morning, stargazer.",
+    "A new day has entered the chat.",
+    "Breakfast first, adventures second."
+  ],
+  "afternoon": [
+    "Afternoon check-in: hydrate!",
+    "A short walk might unlock the next idea.",
+    "You have permission to take a slower breath."
+  ],
+  "evening": [
+    "Evening shift, Nova reporting.",
+    "You made it through today. That counts.",
+    "Wrap up gently. Tomorrow can wait."
+  ],
+  "night": [
+    "The moon says it is bedtime.",
+    "I can keep watch. You should rest.",
+    "One last sip of water before sleep?"
+  ],
+  "outfits": {
+    "aurora": [
+      "Aurora mode: all systems sparkling.",
+      "Blue skies, incoming.",
+      "A fresh scarf for a fresh start."
+    ],
+    "ember": [
+      "Ember mode: extra warm.",
+      "A little sunset energy for you.",
+      "Cozy and ready to help."
+    ],
+    "mint": [
+      "Mint mode: fresh thoughts ahead.",
+      "One cool breeze, delivered.",
+      "A tiny reset button for the day."
+    ]
+  }
+}
